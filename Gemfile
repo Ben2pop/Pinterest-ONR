@@ -6,6 +6,7 @@ gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
+gem 'paperclip', '~> 3.5.2'
 
 group :development, :test do
      gem 'sqlite3'
