@@ -7,6 +7,9 @@ gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 gem 'paperclip', '~> 3.5.2'
+gem 'aws-sdk', '~> 1.20.0'
+gem 'masonry-rails', '~> 0.2.0'
+gem 'jquery-turbolinks'
 
 group :development, :test do
      gem 'sqlite3'
