@@ -77,7 +77,7 @@ Pinterest::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
-  config.action_mailer.default_url_options = { :host => 'http://http://raf-onemonthrails.herokuapp.com/' }
+  config.action_mailer.default_url_options = { :host => 'http://http://rafpintereststyle.herokuapp.com/' }
 
   #paperclip to amazon
   #config.paperclip_defaults = {
