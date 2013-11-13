@@ -1,4 +1,4 @@
-Pinterest::Application.configure do
+Pinteresting::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -43,7 +43,7 @@ Pinterest::Application.configure do
   # config.force_ssl = true
 
   # Set to :debug to see everything in the log.
-  config.log_level = :debug
+  config.log_level = :info
 
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
@@ -77,15 +77,18 @@ Pinterest::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # Required for Heroku
+  # Note to set this to your actual host
   config.action_mailer.default_url_options = { :host => 'rafpintereststyle.herokuapp.com' }
 
-  #paperclip to amazon
+  # Sets Paperclip to upload images to Amazon S3
   #config.paperclip_defaults = {
-  #:storage => :s3,
-  #:s3_credentials => {
-   # :bucket => ENV['AWS_BUCKET'],
-    #:access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-    #:secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
-  }
-}
+   # :storage => :s3,
+   # :s3_credentials => {
+    #  :bucket => ENV['AWS_BUCKET'],
+    #  :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+    #  :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+   # }
+ # }
 end
